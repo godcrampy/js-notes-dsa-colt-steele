@@ -1,6 +1,8 @@
 # Frequency Counters
 
-If there is a loop in loop resulting in a time complexity of _O(n<sup>2</sup>)_, break down into two seperate for loops by making object structures and then use these structures to do the furthur manipulations as accessing objects is faster than accessing arrays and strings
+If there is a loop in loop resulting in a time complexity of _O(n<sup>2</sup>)_, break down into two seperate for loops by making frequency object structures and then use these structures to do the furthur manipulations as accessing objects is faster than accessing arrays and strings
+
+Used when there are linear datstructures such as arrays, linked lists and structs and the position of elements is of no use in the problem.
 
 ## Example
 
