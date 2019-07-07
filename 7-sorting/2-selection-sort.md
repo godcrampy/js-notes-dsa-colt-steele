@@ -3,13 +3,13 @@ We go thru the unsorted array and put the smallest value at the beginning and in
 
 ## Complexity
 1. Time
-	* Best: O(n)
-	* Avg: O(n<sup>2</sup>)
-	* Worst: O(n<sup>2</sup>)
+* Best: O(n)
+* Avg: O(n<sup>2</sup>)
+* Worst: O(n<sup>2</sup>)
 
 
 2. Space
-	* All: O(1)
+* All: O(1)
 
 ## Implementaion
 ```javascript

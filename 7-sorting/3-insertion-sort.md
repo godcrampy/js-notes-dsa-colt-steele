@@ -1,19 +1,22 @@
 # Insertion Sort
 We take one element and insert it in the right place in the sorted part
 
+## Complexity
+1. Time
+	* Best: O(n)
+	* Avg: O(n<sup>2</sup>)
+	* Worst: O(n<sup>2</sup>)
+
+
+2. Space
+	* All: O(1)
+
 ## Implementation
 ```javascript
 function insertionSort(array) {
-    for (let i = 0; i < array.length - 1; i++) {
-        // i represents the last element of the sorted half
-        let target = array[i + 1];
-        for (let j = 0; j <= i; j++) {
-            if (array[j] > target) {
-                array.splice(j, 0, target);
-                array.splice(i + 2, 1);
-                break;
-            }
-        }
-    }
+    for (let i = 0; i < array.length - 1; i++)
+        for (let j = i + 1; j > 0; j--)
+            if (array[j] < array[j - 1])[array[j - 1], array[j]] = [array[j], array[j - 1]];
+            else break;
 }
 ```

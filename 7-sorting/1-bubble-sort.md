@@ -39,8 +39,7 @@ function bubbleSort(array) {
                 didDoSwapping = true;
             }
         }
-        if (!didDoSwapping)
-            break;
+        if (!didDoSwapping) break;
     }
 }
 ```
