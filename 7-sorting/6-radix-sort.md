@@ -2,6 +2,7 @@
 
 Radix sort doesn't use comparisons for sorting instead uses properties of numbers. This sort can be done on integers only. The algorithm groups numbers according to the numbers at units, tens, hundreds and so on places.
 
+### Note on JavaScript Methods
 >NOTE: primitive type variables like strings and numbers are always passed by value.
 Arrays and Objects are passed by reference or by value based on these conditions:
 > 1. if you are setting the value of an object or array it is Pass by Value.
@@ -40,7 +41,7 @@ console.log(number1); //ouput: 10
 
 ## Complexity
 > k is the base on numbers (10 in our case)
-1. Time: O(kxn)
+1. Time: O(kn)
 2. Space: O(k + n)
 
 ## Implementation
