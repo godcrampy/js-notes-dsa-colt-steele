@@ -6,6 +6,14 @@ Collection of nodes each node containing a value and pointer to the next node.
 
 >Javascript is garbage collected, you don't need to delete objects themselves - they will be removed when there is no way to refer to them anymore.
 
+## Complexity
+1. Search: O(n)
+2. Access: O(n)
+3. Delete: O(n) or O(1)
+4. Insert: O(n) or O(1)
+
+> Singly Linked List are better than arrays when insertion and deletion at the end and at the start is required. Accessing is difficult in linked lists
+
 ## Methods
 1. ```push(data)```: Works same as ```push``` of array
 2. ```pop()```: Works same as ```pop``` of array
