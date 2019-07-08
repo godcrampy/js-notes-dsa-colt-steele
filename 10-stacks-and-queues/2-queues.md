@@ -2,7 +2,7 @@
 FIFO. Used in download managers, printing several documents etc.
 
 ## Complexity
-1. ```queue``` and ```dequeue``` are constant time.
+1. ```queue``` and ```dequeue``` are constant time. (Array implementation is not)
 
 ## Implementation
 

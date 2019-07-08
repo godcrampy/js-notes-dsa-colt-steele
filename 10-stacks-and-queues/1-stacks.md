@@ -3,7 +3,7 @@
 Last in First Out. Used in browser history, call stacks etc.
 
 ## Complexity
-1. ```push``` and ```pop``` are constant time.
+1. ```push``` and ```pop``` are constant time. (Array implementation is not)
 
 ## Implementation
 
