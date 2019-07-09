@@ -81,7 +81,8 @@ class MaxBinaryHeap {
 
 ## Complexity
 1. Insertion: log(n)
-1. Removal: log(n)
+2. Removal: log(n)
+3. Search: O(n)
 
 ## Priority Queues
 Priority Queues are datastructures in which the elements with higher priority are sered first. These are used by the Operating System to execute important tasks first. Prioritty Wueues are implemented using heaps since the root node is always the larget value. Thus the taks are queued in a heap and when the root task is performed, it is removed as in above implementation and the next higher values comes to the top and so on. If instead arrays were used, we would take O(n) time to find the max which is slower.
