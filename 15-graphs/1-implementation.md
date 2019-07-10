@@ -29,4 +29,41 @@ class Graph {
             delete this.adjacencyList[vertex];
         }
     }
+    DFS(vertex) {
+        let visited = {};
+        let result = [];
+        const adjacencyList = this.adjacencyList;
+
+        function searchDepthFirst(vertex) {
+            if (!vertex) return null;
+            visited[vertex] = true;
+            result.push(vertex);
+            adjacencyList[vertex].forEach(function (nextVertex) {
+                if (!visited[nextVertex])
+                    return searchDepthFirst(nextVertex);
+            })
+        }
+        searchDepthFirst(vertex)
+        return result;
+    }
+    BFS(vertex) {
+        let visited = {};
+        let result = [];
+        let queue = [vertex];
+        visited[vertex] = true;
+        let currentVertex;
+        while (queue.length) {
+            currentVertex = queue.shift;
+            result.push(currentVertex);
+
+            this.adjacencyList[currentVertex].forEach((nextVertex) => {
+                if (!visited[nextVertex]) {
+                    visited[nextVertex] = true;
+                    queue.push(neighbor);
+                }
+            });
+        }
+        return result;
+    }
 }
+```
